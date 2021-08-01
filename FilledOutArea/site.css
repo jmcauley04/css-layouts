@@ -7,16 +7,11 @@ body {
   display: grid;
   grid:
     "header" 5em /*row height*/
-    "ls    " 0em
     "nav   " 3em /*row height*/
     "main  " 20em /*row height*/
     "aside " min-content /*row height*/
-    "footer" 5em / /*row height*/
+    "footer" min-content / /*row height*/
     1fr; /*column width(s) */
-}
-
-.logo-space {
-  visibility: collapse;
 }
 
 header {
@@ -29,8 +24,10 @@ nav {
   grid-area: nav;
   display: flex;
   justify-content: space-around;
-  row-gap: 0.3rem;
   padding: 0 0;
+}
+nav > div {
+  padding: 0.2rem;
 }
 main {
   grid-area: main;
@@ -44,17 +41,35 @@ aside {
   padding: 0.5rem;
   justify-content: space-around;
 }
+aside > article {
+  padding: 0.5rem;
+}
+
 footer {
   grid-area: footer;
+  display: grid;
+  font-size: 0.7rem;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+}
+footer > p {
+  margin: 0.2rem;
+}
+
+footer > p:nth-child(1) {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 @media screen and (min-width: 700px) {
   body {
     grid:
-      "ls     header" 5em /*row height*/
+      "header header" 5em /*row height*/
       "nav    main  " 20em /*row height*/
       "aside  aside " min-content /*row height*/
-      "footer footer" 5em / /*row height*/
+      "footer footer" min-content / /*row height*/
       200px 2fr; /*column width(s) */
   }
 
@@ -73,9 +88,9 @@ footer {
 @media screen and (min-width: 1000px) {
   body {
     grid:
-      "ls     header header" 5em /*row height*/
+      "header header header" 5em /*row height*/
       "nav    main   aside " max-content /*row height*/
-      "nav    footer footer" 5em / /*row height*/
+      "footer footer footer" min-content / /*row height*/
       200px 2fr 200px; /*column width(s) */
   }
   aside {

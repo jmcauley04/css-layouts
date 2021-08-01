@@ -1,0 +1,26 @@
+main {
+  grid-area: main;
+  display: grid;
+  grid:
+    "jumboimg    " min-content
+    "jumboimgdesc" min-content
+    "ads         " min-content
+    "homeads     " min-content
+    "highlightad " min-content
+    "businessads " min-content
+    "teamsad     " min-content
+    "socialmedia " min-content
+    /
+    1fr;
+  gap: 3rem;
+  padding: 0.5rem;
+}
+
+@media screen and (min-width: 770px) {
+  main {
+    grid:
+      "jumboimg    " min-content
+      "ads         " min-content/
+      1fr;
+  }
+}

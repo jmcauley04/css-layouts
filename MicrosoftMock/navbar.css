@@ -1,0 +1,43 @@
+header > button,
+nav {
+  grid-area: nav;
+}
+
+nav {
+  display: flex;
+  grid-auto-columns: auto;
+  visibility: hidden;
+  width: 0px;
+  height: 0px;
+}
+
+nav > ul {
+  font-size: 14px;
+  list-style: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 1rem;
+  align-content: stretch;
+  margin: 0;
+}
+
+nav > ul > li {
+  padding: 5px 0;
+}
+
+@media screen and (min-width: 860px) {
+  nav {
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+
+  header > button {
+    visibility: hidden;
+    width: 0px;
+    height: 0px;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+}

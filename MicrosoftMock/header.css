@@ -1,0 +1,34 @@
+header {
+  grid-area: header;
+  display: grid;
+  grid-auto-flow: column;
+  text-align: center;
+  align-items: stretch;
+
+  grid-template-columns: repeat(2, 32px) auto repeat(2, 32px);
+  grid-template-rows: min-content;
+  grid-template-areas: "nav search logo cart acct";
+
+  padding: 0.2rem;
+  grid-gap: 0.5rem;
+}
+
+header > div,
+button {
+  border: 1px solid rgba(255, 255, 255, 0.418);
+}
+
+header {
+  grid-area: header;
+}
+
+header .btn {
+  background-color: rgba(0, 0, 0, 0.37);
+}
+
+@media screen and (min-width: 860px) {
+  header {
+    grid-template-columns: min-content auto repeat(3, 32px);
+    grid-template-areas: "logo nav search cart acct";
+  }
+}

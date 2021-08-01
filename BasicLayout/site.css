@@ -7,7 +7,6 @@ body {
   display: grid;
   grid:
     "header" 5em /*row height*/
-    "ls    " 0em
     "nav   " 3em /*row height*/
     "main  " 20em /*row height*/
     "aside " min-content /*row height*/
@@ -43,7 +42,7 @@ footer {
 @media screen and (min-width: 700px) {
   body {
     grid:
-      "ls     header" 5em /*row height*/
+      "header header" 5em /*row height*/
       "nav    main  " 20em /*row height*/
       "aside  aside " min-content /*row height*/
       "footer footer" 5em / /*row height*/
@@ -58,9 +57,9 @@ footer {
 @media screen and (min-width: 1000px) {
   body {
     grid:
-      "ls     header header" 5em /*row height*/
+      "header header header" 5em /*row height*/
       "nav    main   aside " max-content /*row height*/
-      "nav    footer footer" 5em / /*row height*/
+      "footer footer footer" 5em / /*row height*/
       200px 2fr 200px; /*column width(s) */
   }
 }

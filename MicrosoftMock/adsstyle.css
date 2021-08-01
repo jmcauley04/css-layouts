@@ -1,0 +1,28 @@
+.ads {
+  display: grid;
+  gap: 01rem;
+  font-size: 16px;
+  font-weight: lighter;
+  padding: 0.5rem;
+}
+
+.ads .img {
+  font-size: 25px;
+}
+
+@media screen and (min-width: 770px) {
+  .ads {
+    grid: min-content / repeat(6, 1fr);
+    justify-content: space-between;
+  }
+  .ads article {
+    display: grid;
+    text-align: center;
+    align-content: start;
+    gap: 0.5rem;
+  }
+
+  .ads .img {
+    font-size: 50px;
+  }
+}
