@@ -1,15 +1,11 @@
 .jumboimg {
   grid-area: jumboimg;
-  height: 300px;
   width: 100%;
-  border: solid 1px rgba(255, 255, 255, 0.5);
   position: relative;
 }
 
 .jumboimg > .foregroundimg {
-  height: 90%;
   width: 90%;
-  background-color: rgba(255, 255, 255, 0.5);
   position: absolute;
   bottom: 0;
   right: 0;
@@ -24,6 +20,7 @@ h5 {
 
 .jumboimgdesc {
   grid-area: jumboimgdesc;
+  z-index: 1;
   display: grid;
   gap: 0.5rem 3rem;
   grid-auto-rows: max-content;
@@ -98,7 +95,5 @@ h5 {
     margin-left: 3rem;
   }
   .jumboimg > .foregroundimg {
-    height: 65%;
-    width: 65%;
   }
 }
