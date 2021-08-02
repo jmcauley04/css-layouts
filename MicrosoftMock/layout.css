@@ -3,6 +3,7 @@ body {
   font-weight: bold;
   font-family: Arial, Helvetica, sans-serif;
   background-color: blue;
+  margin: 0;
 
   display: grid;
   grid:
@@ -10,6 +11,22 @@ body {
     "main  " max-content /*row height*/
     "footer" min-content / /*row height*/
     1fr; /*column width(s) */
+}
+
+.img-landscape {
+  aspect-ratio: 3 / 2;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-portrait {
+  aspect-ratio: 2 / 3;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-landscape-wide {
+  aspect-ratio: 4 / 2;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .search {
@@ -30,8 +47,12 @@ body {
   color: white;
 }
 
-@media screen and (min-width: 860px) {
-}
-
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1780px) {
+  body {
+    grid:
+      ". header ." min-content /*row height*/
+      ". main   ." max-content /*row height*/
+      ". footer ." min-content / /*row height*/
+      1fr 1780px 1fr; /*column width(s) */
+  }
 }

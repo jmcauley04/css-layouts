@@ -2,6 +2,8 @@
   grid-area: jumboimg;
   width: 100%;
   position: relative;
+  justify-self: center;
+  max-height: 80vh;
 }
 
 .jumboimg > .foregroundimg {
@@ -43,7 +45,7 @@ h5 {
   background-color: yellow;
   color: black;
   text-align: center;
-  padding: 0.2rem 1.5rem;
+  padding: 0.4rem 1.5rem;
   font-weight: bold;
 }
 
@@ -84,6 +86,9 @@ h5 {
       "btn   " max-content
       "appt  " max-content /
       20em;
+
+    margin-top: 3rem;
+    margin-left: 3rem;
   }
   .jumboimgdesc > button {
     justify-self: start;
@@ -93,7 +98,5 @@ h5 {
   }
   .jumboimgdesc > h5 {
     margin-left: 3rem;
-  }
-  .jumboimg > .foregroundimg {
   }
 }

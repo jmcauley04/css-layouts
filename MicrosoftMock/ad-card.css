@@ -1,0 +1,20 @@
+.ms-ad-card {
+  display: grid;
+  font-weight: 300;
+  font-size: 1rem;
+}
+
+.ms-ad-card h3,
+.ms-ad-card p {
+  margin: 0 0 1rem 0;
+}
+
+.ms-ad-card h3 {
+  font-size: 20px;
+  margin: 1rem 0 0.3rem 0;
+}
+
+.ms-ad-card .links {
+  display: flex;
+  gap: 2rem;
+}

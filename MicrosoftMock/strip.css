@@ -1,0 +1,32 @@
+.strip {
+  display: grid;
+  gap: 1rem;
+  background-color: linen;
+  color: black;
+  padding: 1.8rem 1.8rem 0.8rem 1.8rem;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.strip h1,
+.strip p {
+  margin: 0;
+}
+
+.strip .links {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 770px) {
+  .strip h1 {
+    font-size: 35px;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  .strip {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
