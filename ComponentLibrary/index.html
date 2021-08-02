@@ -7,18 +7,89 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="site.css" rel="stylesheet">
     <link href="slider.css" rel="stylesheet">
+    <link href="navbarhover.css" rel="stylesheet">
     <title>Component Library</title>
 </head>
 
 <body>
     <header>
-        <h1>Component Library</h1>
+        <h1>CSS Component Library</h1>
     </header>
     <main>
-        <h3>Slider checkbox:</h3>
+        <h3>Slider checkbox</h3>
         <section class="slider">
             <input type="checkbox" name="slider" id="slider" />
             <label for="slider"></label>
+        </section>
+
+        <h3>Square slider checkbox</h3>
+        <section class="slider slider-square">
+            <input type="checkbox" name="slider" id="slider-square" checked />
+            <label for="slider-square"></label>
+        </section>
+
+        <h3>Round slider checkbox</h3>
+        <section class="slider slider-round">
+            <input type="checkbox" name="slider" id="slider-round" />
+            <label for="slider-round"></label>
+        </section>
+
+        <h3>Flex Nav Menu with hover reveal</h3>
+        <section>
+            <nav>
+                <ul>
+                    <li>Topic 1
+                        <ul class="submenu">
+                            <li><a href="index.html">Link 1</a></li>
+                            <li><a href="index.html">Link 2</a></li>
+                            <li><a href="index.html">Link 3</a></li>
+                            <li>Submenu
+                                <ul class="submenu">
+                                    <li><a href="index.html">Longer link name 1</a></li>
+                                    <li><a href="index.html">Link 2</a></li>
+                                    <li><a href="index.html">Link 3</a></li>
+                                    <li><a href="index.html">Link 4</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>Topic 2
+                        <ul class="submenu">
+                            <li><a href="index.html">Link 1</a></li>
+                            <li><a href="index.html">Link 2</a></li>
+                            <li><a href="index.html">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li>Topic 3
+                        <ul class="submenu">
+                            <li><a href="index.html">Link 1</a></li>
+                            <li><a href="index.html">Link 2</a></li>
+                            <li><a href="index.html">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li>Topic 4
+                        <ul class="submenu">
+                            <li><a href="index.html">Link 1</a></li>
+                            <li><a href="index.html">Link 2</a></li>
+                            <li><a href="index.html">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li>Topic 5
+                        <ul class="submenu">
+                            <li><a href="index.html">Link 1</a></li>
+                            <li><a href="index.html">Link 2</a></li>
+                            <li><a href="index.html">Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li>Topic 6
+                        <ul class="submenu">
+                            <li><a>Link 1</a></li>
+                            <li><a>Link 2</a></li>
+                            <li><a>Link 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </section>
     </main>
 

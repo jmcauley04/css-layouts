@@ -41,3 +41,17 @@
 label:active:after {
   width: 16px;
 }
+
+.slider-square > label {
+  border-radius: 0px;
+}
+.slider-square > label::after {
+  border-radius: 0px;
+}
+
+.slider-round > label {
+  border-radius: 25px;
+}
+.slider-round > label::after {
+  border-radius: 25px;
+}
