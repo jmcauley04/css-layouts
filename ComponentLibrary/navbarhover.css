@@ -17,12 +17,13 @@ nav a {
   text-decoration: none;
 }
 
-nav > li:first-child {
+nav > ul > li:first-child {
   border-left: none;
 }
 
 .submenu {
   position: absolute;
+  z-index: 1;
   width: max-content;
   display: none;
   gap: 0.8rem;
