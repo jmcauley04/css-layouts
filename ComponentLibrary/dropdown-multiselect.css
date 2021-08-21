@@ -1,0 +1,68 @@
+.dropdown-multiselect {
+  position: relative;
+}
+
+.dropdown-multiselect > input[type="checkbox"] {
+  display: none;
+}
+
+.dropdown-multiselect > label {
+  display: inline-block;
+  background-color: white;
+  width: 100%;
+  height: 1.5em;
+  border: solid rgb(114, 114, 114) 1px;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdown-multiselect > label::after {
+  float: right;
+  content: "";
+  width: 0;
+  height: 0;
+  margin-top: 0.5em;
+  margin-right: 0.3em;
+  border-left: 0.4em solid transparent;
+  border-right: 0.4em solid transparent;
+  border-top: 0.4em solid rgb(40, 40, 40);
+}
+
+.dropdown-multiselect > ul {
+  display: grid;
+  visibility: collapse;
+  position: absolute;
+  background-color: white;
+  list-style: none;
+  margin: 0 -5px 0 0;
+  padding: 0.2em 0.5em;
+  width: calc(100% - 1em);
+  top: calc(100% - 0.4em);
+  gap: 0.2em;
+  border: solid rgb(114, 114, 114) 1px;
+  max-height: 30vh;
+}
+
+.dropdown-multiselect li {
+  display: grid;
+  padding-left: 1.6em;
+  text-indent: -1.6em;
+}
+
+.dropdown-multiselect li > label {
+  user-select: none;
+  cursor: pointer;
+  width: 100%;
+}
+.dropdown-multiselect li:hover {
+  background-color: rgb(220, 220, 220);
+}
+
+.dropdown-multiselect > input:checked + label::after {
+  border-bottom: 0.4em solid rgb(40, 40, 40);
+  border-top: none;
+}
+
+.dropdown-multiselect > input:checked ~ ul {
+  visibility: visible;
+}
