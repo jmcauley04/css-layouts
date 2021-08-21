@@ -9,6 +9,7 @@
     <link href="slider.css" rel="stylesheet">
     <link href="navbarhover.css" rel="stylesheet">
     <link href="carousel.css" rel="stylesheet">
+    <link href="dropdown-multiselect.css" rel="stylesheet">
     <title>Component Library</title>
 </head>
 
@@ -17,120 +18,182 @@
         <h1>CSS Component Library</h1>
     </header>
     <main>
-        <h3>Slider checkbox</h3>
-        <section class="slider">
-            <input type="checkbox" name="slider" id="slider" />
-            <label for="slider"></label>
-        </section>
+        <div style="display:none">
+            <h3>Slider checkbox</h3>
+            <section class="slider">
+                <input type="checkbox" name="slider" id="slider" />
+                <label for="slider"></label>
+            </section>
 
-        <h3>Square slider checkbox</h3>
-        <section class="slider slider-square">
-            <input type="checkbox" name="slider" id="slider-square" checked />
-            <label for="slider-square"></label>
-        </section>
+            <h3>Square slider checkbox</h3>
+            <section class="slider slider-square">
+                <input type="checkbox" name="slider" id="slider-square" checked />
+                <label for="slider-square"></label>
+            </section>
 
-        <h3>Round slider checkbox</h3>
-        <section class="slider slider-round">
-            <input type="checkbox" name="slider" id="slider-round" />
-            <label for="slider-round"></label>
-        </section>
+            <h3>Round slider checkbox</h3>
+            <section class="slider slider-round">
+                <input type="checkbox" name="slider" id="slider-round" />
+                <label for="slider-round"></label>
+            </section>
 
-        <h3>Flex Nav Menu with hover reveal</h3>
-        <section>
-            <nav>
-                <ul>
-                    <li>Topic 1
-                        <ul class="submenu">
-                            <li><a href="index.html">Link 1</a></li>
-                            <li><a href="index.html">Link 2</a></li>
-                            <li><a href="index.html">Link 3</a></li>
-                            <li>Submenu
-                                <ul class="submenu">
-                                    <li><a href="index.html">Longer link name 1</a></li>
-                                    <li><a href="index.html">Link 2</a></li>
-                                    <li><a href="index.html">Link 3</a></li>
-                                    <li><a href="index.html">Link 4</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>Topic 2
-                        <ul class="submenu">
-                            <li><a href="index.html">Link 1</a></li>
-                            <li><a href="index.html">Link 2</a></li>
-                            <li><a href="index.html">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li>Topic 3
-                        <ul class="submenu">
-                            <li><a href="index.html">Link 1</a></li>
-                            <li><a href="index.html">Link 2</a></li>
-                            <li><a href="index.html">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li>Topic 4
-                        <ul class="submenu">
-                            <li><a href="index.html">Link 1</a></li>
-                            <li><a href="index.html">Link 2</a></li>
-                            <li><a href="index.html">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li>Topic 5
-                        <ul class="submenu">
-                            <li><a href="index.html">Link 1</a></li>
-                            <li><a href="index.html">Link 2</a></li>
-                            <li><a href="index.html">Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li>Topic 6
-                        <ul class="submenu">
-                            <li><a>Link 1</a></li>
-                            <li><a>Link 2</a></li>
-                            <li><a>Link 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+            <h3>Flex Nav Menu with hover reveal</h3>
+            <section>
+                <nav>
+                    <ul>
+                        <li>Topic 1
+                            <ul class="submenu">
+                                <li><a href="index.html">Link 1</a></li>
+                                <li><a href="index.html">Link 2</a></li>
+                                <li><a href="index.html">Link 3</a></li>
+                                <li>Submenu
+                                    <ul class="submenu">
+                                        <li><a href="index.html">Longer link name 1</a></li>
+                                        <li><a href="index.html">Link 2</a></li>
+                                        <li><a href="index.html">Link 3</a></li>
+                                        <li><a href="index.html">Link 4</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>Topic 2
+                            <ul class="submenu">
+                                <li><a href="index.html">Link 1</a></li>
+                                <li><a href="index.html">Link 2</a></li>
+                                <li><a href="index.html">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>Topic 3
+                            <ul class="submenu">
+                                <li><a href="index.html">Link 1</a></li>
+                                <li><a href="index.html">Link 2</a></li>
+                                <li><a href="index.html">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>Topic 4
+                            <ul class="submenu">
+                                <li><a href="index.html">Link 1</a></li>
+                                <li><a href="index.html">Link 2</a></li>
+                                <li><a href="index.html">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>Topic 5
+                            <ul class="submenu">
+                                <li><a href="index.html">Link 1</a></li>
+                                <li><a href="index.html">Link 2</a></li>
+                                <li><a href="index.html">Link 3</a></li>
+                            </ul>
+                        </li>
+                        <li>Topic 6
+                            <ul class="submenu">
+                                <li><a>Link 1</a></li>
+                                <li><a>Link 2</a></li>
+                                <li><a>Link 3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
 
-        <h3>Carousel</h3>
-        <section class="carousel">
-            <div class="slider">
+            <h3>Carousel</h3>
+            <section class="carousel">
+                <div class="slider">
 
-                <a href="#slide-1">1</a>
-                <a href="#slide-2">2</a>
-                <a href="#slide-3">3</a>
-                <a href="#slide-4">4</a>
-                <a href="#slide-5">5</a>
-                <a href="#slide-6">6</a>
-                <a href="#slide-7">7</a>
+                    <a href="#slide-1">1</a>
+                    <a href="#slide-2">2</a>
+                    <a href="#slide-3">3</a>
+                    <a href="#slide-4">4</a>
+                    <a href="#slide-5">5</a>
+                    <a href="#slide-6">6</a>
+                    <a href="#slide-7">7</a>
 
-                <div class="slides">
-                    <div id="slide-1">
-                        Page 1
-                    </div>
-                    <div id="slide-2">
-                        Page 2
-                    </div>
-                    <div id="slide-3">
-                        Page 3
-                    </div>
-                    <div id="slide-4">
-                        Page 4
-                    </div>
-                    <div id="slide-5">
-                        Page 5
-                    </div>
-                    <div id="slide-6">
-                        Page 6
-                    </div>
-                    <div id="slide-7">
-                        Page 7
+                    <div class="slides">
+                        <div id="slide-1">
+                            Page 1
+                        </div>
+                        <div id="slide-2">
+                            Page 2
+                        </div>
+                        <div id="slide-3">
+                            Page 3
+                        </div>
+                        <div id="slide-4">
+                            Page 4
+                        </div>
+                        <div id="slide-5">
+                            Page 5
+                        </div>
+                        <div id="slide-6">
+                            Page 6
+                        </div>
+                        <div id="slide-7">
+                            Page 7
+                        </div>
                     </div>
                 </div>
-            </div>
 
+        </div>
         </section>
+        <h3>Dropdown Multiselect</h3>
+        <div style="width:200px;">
+            <section class="dropdown-multiselect">
+                <input name="dropdown-checkbox" id="dropdown-checkbox" type="checkbox" />
+                <label for="dropdown-checkbox"></label>
+                <ul class="styled-scroll primary-shadow">
+                    <li><label><input type="checkbox" /> Option 1</label></li>
+                    <li><label><input type="checkbox" /> Option 2</label></li>
+                    <li><label><input type="checkbox" /> Option 3</label></li>
+                    <li><label><input type="checkbox" /> What if we have a long option? oh no!</label></li>
+                    <li><label><input type="checkbox" /> Option 4</label></li>
+                    <li><label><input type="checkbox" /> Option 5</label></li>
+                    <li><label><input type="checkbox" /> Option 6</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                    <li><label><input type="checkbox" /> Lots of options!!</label></li>
+                </ul>
+            </section>
+        </div>
+
+        <h3>next item</h3>
     </main>
 
 </body>
